@@ -174,7 +174,7 @@
             let listDOM = '';
             if (Array.isArray(sources) && sources.length > 0) {
                 for (const url of sources) {
-                    listDOM += `<li><a href='${url}'>${url}</a></li>`;
+                    listDOM += `<li><a href='${url}' target='_blank'>${url}</a></li>`;
                 }
             } else {
                 listDOM = '<li style="color: #ff4747">Missing!</li>';
@@ -354,6 +354,7 @@
     <h4>Description</h4>
     <textarea id='run-description' style="width: 500px; height: 100px;">Please import JSON</textarea>
     <h4>Original Sources</h4>
+    <p>Links to the original YouTube/Twitch/SDA/archive.org source(s) from the original runner where possible</p>
     <ul id="original-source-list">
         <li>Please import JSON</li>
     </ul>

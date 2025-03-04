@@ -1166,28 +1166,40 @@
 		"platform": "N64",
 		"time": "0-25-50",
 		"runner": "zorulda",
-		"playedDate": "2020-12-03"
+		"playedDate": "2020-12-03",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=jEtPSCuUQQU"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-26-08",
 		"runner": "zorulda",
-		"playedDate": "2020-06-25"
+		"playedDate": "2020-06-25",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=-bglBCT9Mt0"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-26-22",
 		"runner": "zorulda",
-		"playedDate": "2020-06-25"
+		"playedDate": "2020-06-25",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=5yV0i31uQmg"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-26-23",
 		"runner": "Znernicus",
-		"playedDate": "2020-03-21"
+		"playedDate": "2020-03-21",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=dd4IUHIskeM"
+		]
 	},
 	{
 		"category": "Any%",
