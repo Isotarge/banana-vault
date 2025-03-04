@@ -26,11 +26,13 @@
             document.getElementById("original-source-list").innerHTML = sourcesToListDOM(run.originalSources);
             document.getElementById("youtube-list").innerHTML = sourcesToListDOM(run.uploadedYouTube);
             document.getElementById("archive-org-list").innerHTML = sourcesToListDOM(run.uploadedArchive);
+            document.getElementById("missing-checkbox").checked = run.isMissing === true;
         }
 
         function refreshRuns() {
             let runsToUploadDOM = '';
             let runsUploadedDOM = '';
+            let uncategorisedRunsDOM = '';
             let missingRunsDOM = '';
             for (const i in runs) {
                 const run = runs[i];
@@ -41,16 +43,19 @@
                 if (isFullyArchived) {
                     runsUploadedDOM += formatRunOption(i, run);
                 } else {
-                    if (hasSource) {
+                    if (run.isMissing) {
+                        missingRunsDOM += formatRunOption(i, run);
+                    } else if (hasSource) {
                         runsToUploadDOM += formatRunOption(i, run);
                     } else {
-                        missingRunsDOM += formatRunOption(i, run);
+                        uncategorisedRunsDOM += formatRunOption(i, run);
                     }
                 }
             }
 
             document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
             document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
+            document.getElementById("uncategorised-run").innerHTML = uncategorisedRunsDOM;
             document.getElementById("missing-run").innerHTML = missingRunsDOM;
             document.getElementById("run-to-upload").dispatchEvent(new Event('change'));
         }
@@ -357,6 +362,17 @@
             document.getElementById('archive-org-url').value = '';
             return result;
         }
+
+        function toggleSelectedRunMissing() {
+            const isMissing = document.getElementById('missing-checkbox').checked;
+            if (isMissing) {
+                console.log("TOGGLED IS MISSING TO TRUE");
+                runs[selectedRunIndex].isMissing = true;
+            } else {
+                console.log("TOGGLED IS MISSING TO FALSE");
+                delete runs[selectedRunIndex].isMissing;
+            }
+        }
     </script>
     <h1>WR Manager</h1>
     <form onsubmit="event.preventDefault();">
@@ -372,11 +388,16 @@
     <select name="uploaded-run" id="uploaded-run" onchange="selectRun('uploaded-run')">
         <option>Please import JSON</option>
     </select>
+    <h2>Uncategorised Runs</h2>
+    <select name="uncategorised-run" id="uncategorised-run" onchange="selectRun('uncategorised-run')">
+        <option>Please import JSON</option>
+    </select>
     <h2>Missing Runs</h2>
     <select name="missing-run" id="missing-run" onchange="selectRun('missing-run')">
         <option>Please import JSON</option>
     </select>
     <h3>Current Run</h3>
+    <input type="checkbox" id="missing-checkbox" oninput="toggleSelectedRunMissing()"> Missing<br>
     <button onclick="selectPreviousRun()">Previous Run</button><button onclick="selectNextRun()">Next Run</button>
     <h4>Description</h4>
     <textarea id='run-description' style="width: 500px; height: 100px;">Please import JSON</textarea>

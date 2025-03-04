@@ -4,14 +4,16 @@
 		"platform": "N64",
 		"time": "10-09-00",
 		"runner": "Steven Zwartjes",
-		"playedDate": "2000-02-09"
+		"playedDate": "2000-02-09",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "12-56-00",
 		"runner": "Alex Penev",
-		"playedDate": "2000-02-04"
+		"playedDate": "2000-02-04",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
@@ -53,14 +55,16 @@
 		"platform": "N64",
 		"time": "6-50-00",
 		"runner": "Cfox",
-		"playedDate": "2013-xx-xx"
+		"playedDate": "2013-xx-xx",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-51-52",
 		"runner": "Cfox",
-		"playedDate": "2013-06-13"
+		"playedDate": "2013-06-13",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
@@ -95,28 +99,32 @@
 		"platform": "N64",
 		"time": "7-29-00",
 		"runner": "leftysheroes",
-		"playedDate": "2011-02-24"
+		"playedDate": "2011-02-24",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "7-39-00",
 		"runner": "leftysheroes",
-		"playedDate": "201x-xx-xx"
+		"playedDate": "201x-xx-xx",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "7-50-00",
 		"runner": "leftysheroes",
-		"playedDate": "2010-03-30"
+		"playedDate": "2010-03-30",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "8-20-00",
 		"runner": "leftysheroes",
-		"playedDate": "2009-09-29"
+		"playedDate": "2009-09-29",
+		"isMissing": true
 	},
 	{
 		"category": "101%",
