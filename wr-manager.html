@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark"/>
+    <title>WR Manager</title>
+</head>
+<body>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        let runs = []; // Loaded from JSON
+        let selectedRunIndex = 0;
+
+        function filesToJSON() {
+            const regex = /- (.+) \((.+)\) in (.+) by (.+) - ([\d|x]{4}-[\d|x]{2}-[\d|x]{2})/mg;
+
+            // TODO: If you want to reuse this function, populate str with the raw filenames as a multiline string
+            // Can be found in raw_filenames.txt
+            const str = ``;
+
+            let m;
+
+            runs = [];
+            selectedRunIndex = 0;
+
+            while ((m = regex.exec(str)) !== null) {
+                // This is necessary to avoid infinite loops with zero-width matches
+                if (m.index === regex.lastIndex) {
+                    regex.lastIndex++;
+                }
+                
+                runs.push({
+                    category: m[1],
+                    platform: m[2],
+                    time: m[3],
+                    runner: m[4],
+                    playedDate: m[5],
+                });
+            }
+        }
+
+        function formatRunOption(i, run) {
+            return `<option id='${i}'>${run.category} in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
+        }
+
+        function refreshRuns() {
+            let runsToUploadDOM = '';
+            let runsUploadedDOM = '';
+            let missingRunsDOM = '';
+            for (const i in runs) {
+                const run = runs[i];
+                const isFullyArchived =
+                    Array.isArray(run.uploadedArchive) && run.uploadedArchive.length > 0 &&
+                    Array.isArray(run.uploadedYouTube) && run.uploadedYouTube.length > 0;
+                const hasSource = Array.isArray(run.originalSources) && run.originalSources.length > 0;
+                if (isFullyArchived) {
+                    runsUploadedDOM += formatRunOption(i, run);
+                } else {
+                    if (hasSource) {
+                        runsToUploadDOM += formatRunOption(i, run);
+                    } else {
+                        missingRunsDOM += formatRunOption(i, run);
+                    }
+                }
+            }
+
+            document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
+            document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
+            document.getElementById("missing-run").innerHTML = missingRunsDOM;
+            // TODO: Select first run to upload
+            // TODO: Populate textarea
+        }
+
+        function importJSON() {
+            const input = document.getElementById('import-json');
+            if (!input) {
+                alertModal("Couldn't find the fileinput DOM element.");
+            } else if (!input.files) {
+                alertModal("This browser doesn't seem to support the `files` property of file inputs.");
+            } else if (!input.files[0]) {
+                alertModal("Please select a file before clicking 'Import JSON'");
+            } else {
+                const file = input.files[0];
+                const fr = new FileReader();
+                fr.onload = function(e) {
+                    let lines = e.target.result;
+                    const tree = JSON.parse(lines);
+                    if (Array.isArray(tree)) {
+                        runs = tree;
+                        refreshRuns();
+                    } else {
+                        alert("Invalid tree format from JSON :(");
+                    }
+                };
+                fr.readAsText(file);
+            }
+        }
+
+        function exportJSON(id) {
+            function download(content, fileName, contentType) {
+                const a = document.createElement("a");
+                const file = new Blob([content], {type: contentType});
+                a.href = URL.createObjectURL(file);
+                a.download = fileName;
+                a.click();
+            }
+			download(JSON.stringify(runs, null, '\t'), `WRs.json`, 'application/json');
+		}
+
+        function getDurationString(date1, date2) {
+            const earlierDate = date1 < date2 ? date1 : date2;
+            const laterDate = date1 > date2 ? date1 : date2;
+
+            const years = laterDate.getFullYear() - earlierDate.getFullYear();
+            const months = laterDate.getMonth() - earlierDate.getMonth();
+            const days = laterDate.getDate() - earlierDate.getDate();
+
+            let adjustedYears = years;
+            let adjustedMonths = months;
+            let adjustedDays = days;
+
+            // Adjust months and years if needed
+            if (adjustedDays < 0) {
+                adjustedMonths -= 1;
+                const prevMonth = new Date(laterDate.getFullYear(), laterDate.getMonth(), 0).getDate();
+                adjustedDays += prevMonth;
+            }
+
+            if (adjustedMonths < 0) {
+                adjustedYears -= 1;
+                adjustedMonths += 12;
+            }
+
+            const parts = [];
+            if (adjustedYears > 0) parts.push(`${adjustedYears} year${adjustedYears > 1 ? 's' : ''}`);
+            if (adjustedMonths > 0) parts.push(`${adjustedMonths} month${adjustedMonths > 1 ? 's' : ''}`);
+            if (adjustedDays > 0) parts.push(`${adjustedDays} day${adjustedDays > 1 ? 's' : ''}`);
+
+            return parts.length > 0 ? parts.join(', ') : '0 days';
+        }
+
+        function sourcesToList(sources, prefix) {
+            if (sources.length == 0) {
+                return '';
+            }
+            if (sources.length > 1) {
+                // Plural
+                let finalString = `\n${prefix} sources:\n`
+                for (const source of sources) {
+                    finalString += `- ${source}\n`;
+                }
+                return finalString;
+            } else {
+                // Singular
+                return `\n${prefix} source: ${sources[0]}`;
+            }
+        }
+
+        function isSameCategory(oneRun, anotherRun) {
+            return (oneRun !== null && anotherRun !== null)
+                && oneRun.category === anotherRun.category;
+        }
+
+        function isSameRun(oneRun, anotherRun) {
+            return (oneRun !== null && anotherRun !== null) &&
+                oneRun.category === anotherRun.category &&
+                oneRun.platform === anotherRun.platform &&
+                oneRun.runner === anotherRun.runner &&
+                oneRun.playedDate === anotherRun.playedDate &&
+                oneRun.time === anotherRun.time;
+        }
+
+        function compareDurations(duration1, duration2) {
+            // Helper function to parse a duration string into seconds
+            function parseDuration(duration) {
+                const parts = duration.split('-').reverse();
+                const timeUnits = [1, 60, 3600]; // seconds, minutes, hours
+                let totalSeconds = 0;
+
+                for (let i = 0; i < timeUnits.length; i++) {
+                    let part = parts[i] || '0'; // Default missing parts to '0'
+                    if (part === 'x') continue;  // Skip wildcards
+                    totalSeconds += parseInt(part, 10) * timeUnits[i];
+                }
+
+                return totalSeconds;
+            }
+
+            const time1 = parseDuration(duration1);
+            const time2 = parseDuration(duration2);
+
+            if (time1 < time2) return -1;
+            if (time1 > time2) return 1;
+            return 0;
+        }
+
+        function isFaster(oneRun, anotherRun) {
+            if (oneRun === null) {
+                return anotherRun !== null;
+            }
+            if (anotherRun === null) {
+                return false;
+            }
+            return compareDurations(oneRun.time, anotherRun.time) == 1;
+        }
+
+        function isNewer(oneRun, anotherRun) {
+            if (oneRun === null) {
+                return anotherRun !== null;
+            }
+            if (anotherRun === null) {
+                return false;
+            }
+            const runPlayedDate = new Date(oneRun.playedDate);
+            const anotherRunPlayedDate = new Date(anotherRun.playedDate);
+            return anotherRunPlayedDate > runPlayedDate || (runPlayedDate == anotherRunPlayedDate && isFaster(oneRun, anotherRun));
+        }
+
+        function getNextRun(run) {
+            let nextRun = null;
+            for (const possibleNextRun of runs) {
+                // The next run must be of the same category as the current run
+                if (!isSameCategory(run, possibleNextRun)) {
+                    continue;
+                }
+                // The next run must not be the same run as the current run
+                if (isSameRun(run, possibleNextRun)) {
+                    continue;
+                }
+                // The next run must be newer than the current run
+                if (!isNewer(run, possibleNextRun)) {
+                    continue;
+                }
+                // The next run must be faster than the current run
+                if (!isFaster(run, possibleNextRun)) {
+                    continue;
+                }
+
+                if (!nextRun) {
+                    // We don't have any next run candidate yet, initialize!
+                    nextRun = possibleNextRun;
+                } else {
+                    // Only replace the next run candidate if the newly found run is slower than the existing candidate
+                    if (!isFaster(nextRun, possibleNextRun)) {
+                        nextRun = possibleNextRun;
+                    }
+                }
+            }
+            return nextRun;
+        }
+
+        function generateDescription(run) {
+            const nextRun = getNextRun(run);
+            let description = `Played by: ${run.runner} on ${run.playedDate}\n`;
+            description += `Category: ${run.category} (${run.platform})\n`;
+            if (nextRun) {
+                description += `World record from: ${run.playedDate} to ${nextRun.playedDate} (${getDurationString(run.playedDate, nextRun.playedDate)})`;
+            } else {
+                description += `World record from: ${run.playedDate} to present`;
+            }
+            description += sourcesToList(run.originalSources, 'Original');
+            description += sourcesToList(run.uploadedArchive, 'Archive');
+            return description;
+        }
+
+        function selectRun() {
+            document.getElementById("run-description").value = generateDescription(run);
+        }
+
+        function addLink(key, link) {
+            if (!runs[selectedRunIndex]) {
+                return false;
+            }
+            if (!Array.isArray(runs[selectedRunIndex][key])) {
+                runs[selectedRunIndex][key] = [];
+            }
+            runs[selectedRunIndex][key].push(link);
+            return true;
+        }
+
+        function addSource(originalSource) {
+            return addLink(originalSource, 'originalSources');
+        }
+
+        function addYouTubeLink(ytLink) {
+            return addLink(ytLink, 'uploadedYouTube');
+        }
+
+        function addArchiveLink(archiveLink) {
+            return addLink(archiveLink, 'uploadedArchive');
+        }
+    </script>
+    <h1>WR Manager</h1>
+    <form onsubmit="event.preventDefault();">
+        <input type="file" name="import-json" id="import-json">
+        <button onclick="importJSON()">Import JSON</button>
+        <button onclick="exportJSON()">Export JSON</button>
+    </form>
+    <h2>Runs to Upload</h2>
+    <select name="run-to-upload" id="run-to-upload">
+        <option>Please import JSON</option>
+    </select>
+    <h2>Uploaded Runs</h2>
+    <select name="uploaded-run" id="uploaded-run">
+        <option>Please import JSON</option>
+    </select>
+    <h2>Missing Runs</h2>
+    <select name="missing-run" id="missing-run">
+        <option>Please import JSON</option>
+    </select>
+    <h3>Current Run</h3>
+    <h4>Description</h4>
+    <textarea id='run-description' style="width: 500px; height: 100px;">Please import JSON</textarea>
+    <h4>Sources</h4>
+    <ul>
+        <li>Please import JSON</li>
+    </ul>
+    <input type="url" name="source-url" id="source-url">
+    <button>Add Source</button>
+</body>
+</html>
