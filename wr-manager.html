@@ -300,10 +300,10 @@
         }
 
         function selectNextRun() {
-            console.log("Select next run");
-            const nextRun = getNextRun();
+            const nextRun = getNextRun(runs[selectedRunIndex]);
             if (nextRun) {
-                console.log("Next run found!", nextRun);
+                selectedRunIndex = runs.indexOf(nextRun);
+                refreshSelectedRunUI();
             }
         }
 
@@ -320,15 +320,21 @@
         }
 
         function addSource() {
-            return addLink('originalSources', document.getElementById('original-source-url').value);
+            const result = addLink('originalSources', document.getElementById('original-source-url').value);
+            document.getElementById('original-source-url').value = '';
+            return result;
         }
 
         function addYouTubeLink() {
-            return addLink('uploadedYouTube', document.getElementById('banana-vault-youtube-url').value);
+            const result = addLink('uploadedYouTube', document.getElementById('banana-vault-youtube-url').value);
+            document.getElementById('banana-vault-youtube-url').value = '';
+            return result;
         }
 
         function addArchiveLink() {
-            return addLink('uploadedArchive', document.getElementById('archive-org-url').value);
+            const result = addLink('uploadedArchive', document.getElementById('archive-org-url').value);
+            document.getElementById('archive-org-url').value = '';
+            return result;
         }
     </script>
     <h1>WR Manager</h1>
