@@ -48,6 +48,14 @@
             return `<option value='${i}'>${run.category} in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
         }
 
+        function refreshSelectedRunUI() {
+            const run = runs[selectedRunIndex];
+            document.getElementById("run-description").value = generateDescription(run);
+            document.getElementById("original-source-list").innerHTML = sourcesToListDOM(run.originalSources);
+            document.getElementById("youtube-list").innerHTML = sourcesToListDOM(run.uploadedYouTube);
+            document.getElementById("archive-org-list").innerHTML = sourcesToListDOM(run.uploadedArchive);
+        }
+
         function refreshRuns() {
             let runsToUploadDOM = '';
             let runsUploadedDOM = '';
@@ -72,8 +80,7 @@
             document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
             document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
             document.getElementById("missing-run").innerHTML = missingRunsDOM;
-            // TODO: Select first run to upload
-            // TODO: Populate textarea
+            document.getElementById("run-to-upload").dispatchEvent(new Event('change'));
         }
 
         function importJSON() {
@@ -161,6 +168,18 @@
                 // Singular
                 return `\n${prefix} source: ${sources[0]}`;
             }
+        }
+
+        function sourcesToListDOM(sources) {
+            let listDOM = '';
+            if (Array.isArray(sources) && sources.length > 0) {
+                for (const url of sources) {
+                    listDOM += `<li><a href='${url}'>${url}</a></li>`;
+                }
+            } else {
+                listDOM = '<li style="color: #ff4747">Missing!</li>';
+            }
+            return listDOM;
         }
 
         function isSameCategory(oneRun, anotherRun) {
@@ -258,12 +277,12 @@
 
         function generateDescription(run) {
             const nextRun = getNextRun(run);
-            let description = `Played by: ${run.runner} on ${run.playedDate}\n`;
+            let description = `Played by ${run.runner} on ${run.playedDate}\n`;
             description += `Category: ${run.category} (${run.platform})\n`;
             if (nextRun) {
-                description += `World record from: ${run.playedDate} to ${nextRun.playedDate} (${getDurationString(run.playedDate, nextRun.playedDate)})`;
+                description += `World record from ${run.playedDate} to ${nextRun.playedDate} (${getDurationString(run.playedDate, nextRun.playedDate)})`;
             } else {
-                description += `World record from: ${run.playedDate} to present`;
+                description += `World record from ${run.playedDate} to present`;
             }
             description += sourcesToList(run.originalSources, 'Original');
             description += sourcesToList(run.uploadedArchive, 'Archive');
@@ -272,8 +291,7 @@
 
         function selectRun(selectID) {
             selectedRunIndex = document.getElementById(selectID).value;
-            const run = runs[selectedRunIndex];
-            document.getElementById("run-description").value = generateDescription(run);
+            refreshSelectedRunUI();
         }
 
         function selectPreviousRun() {
@@ -297,19 +315,20 @@
                 runs[selectedRunIndex][key] = [];
             }
             runs[selectedRunIndex][key].push(link);
+            refreshSelectedRunUI();
             return true;
         }
 
         function addSource() {
-            return addLink(document.getElementById('original-source-url').value, 'originalSources');
+            return addLink('originalSources', document.getElementById('original-source-url').value);
         }
 
         function addYouTubeLink() {
-            return addLink(document.getElementById('banana-vault-youtube-url').value, 'uploadedYouTube');
+            return addLink('uploadedYouTube', document.getElementById('banana-vault-youtube-url').value);
         }
 
         function addArchiveLink() {
-            return addLink(document.getElementById('archive-org-url').value, 'uploadedArchive');
+            return addLink('uploadedArchive', document.getElementById('archive-org-url').value);
         }
     </script>
     <h1>WR Manager</h1>

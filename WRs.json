@@ -1194,14 +1194,20 @@
 		"platform": "N64",
 		"time": "0-26-34",
 		"runner": "zorulda",
-		"playedDate": "2019-02-12"
+		"playedDate": "2019-02-12",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=ptQwLwtphA0"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-26-42",
 		"runner": "Znernicus",
-		"playedDate": "2018-01-29"
+		"playedDate": "2018-01-29",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=nncLUYjsrnk"
+		]
 	},
 	{
 		"category": "No Levels Early",
