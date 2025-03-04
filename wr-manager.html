@@ -16,36 +16,8 @@
         let runs = []; // Loaded from JSON
         let selectedRunIndex = 0;
 
-        function filesToJSON() {
-            const regex = /- (.+) \((.+)\) in (.+) by (.+) - ([\d|x]{4}-[\d|x]{2}-[\d|x]{2})/mg;
-
-            // TODO: If you want to reuse this function, populate str with the raw filenames as a multiline string
-            // Can be found in raw_filenames.txt
-            const str = ``;
-
-            let m;
-
-            runs = [];
-            selectedRunIndex = 0;
-
-            while ((m = regex.exec(str)) !== null) {
-                // This is necessary to avoid infinite loops with zero-width matches
-                if (m.index === regex.lastIndex) {
-                    regex.lastIndex++;
-                }
-                
-                runs.push({
-                    category: m[1],
-                    platform: m[2],
-                    time: m[3],
-                    runner: m[4],
-                    playedDate: m[5],
-                });
-            }
-        }
-
         function formatRunOption(i, run) {
-            return `<option value='${i}'>${run.category} in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
+            return `<option value='${i}'>${run.category} (${run.platform}) in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
         }
 
         function refreshSelectedRunUI() {
@@ -242,6 +214,7 @@
             return anotherRunPlayedDate > runPlayedDate || (runPlayedDate == anotherRunPlayedDate && isFaster(oneRun, anotherRun));
         }
 
+        // TODO: Ensure same platform
         function getPreviousRun(run) {
             let previousRun = null;
             for (const possiblePreviousRun of runs) {
@@ -275,6 +248,7 @@
             return previousRun;
         }
 
+        // TODO: Ensure same platform
         function getNextRun(run) {
             let nextRun = null;
             for (const possibleNextRun of runs) {
