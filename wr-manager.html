@@ -45,7 +45,7 @@
         }
 
         function formatRunOption(i, run) {
-            return `<option id='${i}'>${run.category} in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
+            return `<option value='${i}'>${run.category} in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
         }
 
         function refreshRuns() {
@@ -113,8 +113,10 @@
 		}
 
         function getDurationString(date1, date2) {
-            const earlierDate = date1 < date2 ? date1 : date2;
-            const laterDate = date1 > date2 ? date1 : date2;
+            date1D = new Date(date1);
+            date2D = new Date(date2);
+            const earlierDate = date1D < date2D ? date1D : date2D;
+            const laterDate = date1D > date2D ? date1D : date2D;
 
             const years = laterDate.getFullYear() - earlierDate.getFullYear();
             const months = laterDate.getMonth() - earlierDate.getMonth();
@@ -145,7 +147,7 @@
         }
 
         function sourcesToList(sources, prefix) {
-            if (sources.length == 0) {
+            if (!Array.isArray(sources) || sources.length == 0) {
                 return '';
             }
             if (sources.length > 1) {
@@ -162,12 +164,12 @@
         }
 
         function isSameCategory(oneRun, anotherRun) {
-            return (oneRun !== null && anotherRun !== null)
+            return (oneRun != null && anotherRun != null)
                 && oneRun.category === anotherRun.category;
         }
 
         function isSameRun(oneRun, anotherRun) {
-            return (oneRun !== null && anotherRun !== null) &&
+            return (oneRun != null && anotherRun != null) &&
                 oneRun.category === anotherRun.category &&
                 oneRun.platform === anotherRun.platform &&
                 oneRun.runner === anotherRun.runner &&
@@ -200,20 +202,20 @@
         }
 
         function isFaster(oneRun, anotherRun) {
-            if (oneRun === null) {
-                return anotherRun !== null;
+            if (oneRun == null) {
+                return anotherRun != null;
             }
-            if (anotherRun === null) {
+            if (anotherRun == null) {
                 return false;
             }
             return compareDurations(oneRun.time, anotherRun.time) == 1;
         }
 
         function isNewer(oneRun, anotherRun) {
-            if (oneRun === null) {
-                return anotherRun !== null;
+            if (oneRun == null) {
+                return anotherRun != null;
             }
-            if (anotherRun === null) {
+            if (anotherRun == null) {
                 return false;
             }
             const runPlayedDate = new Date(oneRun.playedDate);
@@ -268,8 +270,23 @@
             return description;
         }
 
-        function selectRun() {
+        function selectRun(selectID) {
+            selectedRunIndex = document.getElementById(selectID).value;
+            const run = runs[selectedRunIndex];
             document.getElementById("run-description").value = generateDescription(run);
+        }
+
+        function selectPreviousRun() {
+            // TODO
+            console.log("Select previous run");
+        }
+
+        function selectNextRun() {
+            console.log("Select next run");
+            const nextRun = getNextRun();
+            if (nextRun) {
+                console.log("Next run found!", nextRun);
+            }
         }
 
         function addLink(key, link) {
@@ -283,16 +300,16 @@
             return true;
         }
 
-        function addSource(originalSource) {
-            return addLink(originalSource, 'originalSources');
+        function addSource() {
+            return addLink(document.getElementById('original-source-url').value, 'originalSources');
         }
 
-        function addYouTubeLink(ytLink) {
-            return addLink(ytLink, 'uploadedYouTube');
+        function addYouTubeLink() {
+            return addLink(document.getElementById('banana-vault-youtube-url').value, 'uploadedYouTube');
         }
 
-        function addArchiveLink(archiveLink) {
-            return addLink(archiveLink, 'uploadedArchive');
+        function addArchiveLink() {
+            return addLink(document.getElementById('archive-org-url').value, 'uploadedArchive');
         }
     </script>
     <h1>WR Manager</h1>
@@ -302,25 +319,40 @@
         <button onclick="exportJSON()">Export JSON</button>
     </form>
     <h2>Runs to Upload</h2>
-    <select name="run-to-upload" id="run-to-upload">
+    <select name="run-to-upload" id="run-to-upload" onchange="selectRun('run-to-upload')">
         <option>Please import JSON</option>
     </select>
     <h2>Uploaded Runs</h2>
-    <select name="uploaded-run" id="uploaded-run">
+    <select name="uploaded-run" id="uploaded-run" onchange="selectRun('uploaded-run')">
         <option>Please import JSON</option>
     </select>
     <h2>Missing Runs</h2>
-    <select name="missing-run" id="missing-run">
+    <select name="missing-run" id="missing-run" onchange="selectRun('missing-run')">
         <option>Please import JSON</option>
     </select>
     <h3>Current Run</h3>
+    <button onclick="selectPreviousRun()">Previous Run</button><button onclick="selectNextRun()">Next Run</button>
     <h4>Description</h4>
     <textarea id='run-description' style="width: 500px; height: 100px;">Please import JSON</textarea>
-    <h4>Sources</h4>
-    <ul>
+    <h4>Original Sources</h4>
+    <ul id="original-source-list">
         <li>Please import JSON</li>
     </ul>
-    <input type="url" name="source-url" id="source-url">
-    <button>Add Source</button>
+    <input type="url" name="original-source-url" id="original-source-url">
+    <button onclick="addSource()">Add Original Source URL</button>
+    <h4>Banana Vault YouTube URLs</h4>
+    <p>To be added after uploading the run to "The Banana Vault" on YouTube</p>
+    <ul id="youtube-list">
+        <li>Please import JSON</li>
+    </ul>
+    <input type="url" name="banana-vault-youtube-url" id="banana-vault-youtube-url">
+    <button onclick="addYouTubeLink()">Add Banana Vault YouTube URL</button>
+    <h4>archive.org URLs</h4>
+    <p>To be added after uploading the run to archive.org</p>
+    <ul id="archive-org-list">
+        <li>Please import JSON</li>
+    </ul>
+    <input type="url" name="archive-org-url" id="archive-org-url">
+    <button onclick="addArchiveLink()">Add archive.org URL</button>
 </body>
 </html>
