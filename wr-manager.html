@@ -242,6 +242,39 @@
             return anotherRunPlayedDate > runPlayedDate || (runPlayedDate == anotherRunPlayedDate && isFaster(oneRun, anotherRun));
         }
 
+        function getPreviousRun(run) {
+            let previousRun = null;
+            for (const possiblePreviousRun of runs) {
+                // The previous run must be of the same category as the current run
+                if (!isSameCategory(run, possiblePreviousRun)) {
+                    continue;
+                }
+                // The previous run must not be the same run as the current run
+                if (isSameRun(run, possiblePreviousRun)) {
+                    continue;
+                }
+                // The previous run must be older than the current run
+                if (isNewer(run, possiblePreviousRun)) {
+                    continue;
+                }
+                // The previous run must be slower than the current run
+                if (isFaster(run, possiblePreviousRun)) {
+                    continue;
+                }
+
+                if (!previousRun) {
+                    // We don't have any previous run candidate yet, initialize!
+                    previousRun = possiblePreviousRun;
+                } else {
+                    // Only replace the previous run candidate if the newly found run is faster than the existing candidate
+                    if (isFaster(previousRun, possiblePreviousRun)) {
+                        previousRun = possiblePreviousRun;
+                    }
+                }
+            }
+            return previousRun;
+        }
+
         function getNextRun(run) {
             let nextRun = null;
             for (const possibleNextRun of runs) {
@@ -295,8 +328,11 @@
         }
 
         function selectPreviousRun() {
-            // TODO
-            console.log("Select previous run");
+            const previousRun = getPreviousRun(runs[selectedRunIndex]);
+            if (previousRun) {
+                selectedRunIndex = runs.indexOf(previousRun);
+                refreshSelectedRunUI();
+            }
         }
 
         function selectNextRun() {
