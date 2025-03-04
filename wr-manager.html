@@ -366,10 +366,8 @@
         function toggleSelectedRunMissing() {
             const isMissing = document.getElementById('missing-checkbox').checked;
             if (isMissing) {
-                console.log("TOGGLED IS MISSING TO TRUE");
                 runs[selectedRunIndex].isMissing = true;
             } else {
-                console.log("TOGGLED IS MISSING TO FALSE");
                 delete runs[selectedRunIndex].isMissing;
             }
         }
