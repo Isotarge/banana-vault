@@ -1152,14 +1152,20 @@
 		"platform": "N64",
 		"time": "0-25-43",
 		"runner": "Awhitmore",
-		"playedDate": "2024-04-20"
+		"playedDate": "2024-04-20",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=6aqtfKTQ3sI"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-25-49",
 		"runner": "Znernicus",
-		"playedDate": "2023-02-12"
+		"playedDate": "2023-02-12",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1736651943"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1744,175 +1750,250 @@
 		"platform": "N64",
 		"time": "2-01-04",
 		"runner": "Znernicus",
-		"playedDate": "2024-12-14"
+		"playedDate": "2024-12-14",
+		"originalSources": [
+			"https://www.twitch.tv/videos/2326266056"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-01-07",
 		"runner": "RandomSauce",
-		"playedDate": "2024-12-03"
+		"playedDate": "2024-12-03",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=5Mt5cTkNuyc"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-01-44",
 		"runner": "zorulda",
-		"playedDate": "2021-09-19"
+		"playedDate": "2021-09-19",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=CMaFIWlZBgo"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-02-01",
 		"runner": "zorulda",
-		"playedDate": "2021-09-15"
+		"playedDate": "2021-09-15",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=3HLtTP-QjJU"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-03-26",
 		"runner": "zorulda",
-		"playedDate": "2021-09-04"
+		"playedDate": "2021-09-04",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=vMPhlKz8CVk"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-03-36",
 		"runner": "zorulda",
-		"playedDate": "2021-08-25"
+		"playedDate": "2021-08-25",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=mvrWuZ7od_E"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-04-06",
 		"runner": "zorulda",
-		"playedDate": "2021-08-22"
+		"playedDate": "2021-08-22",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=nnibM9qDwzI"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-04-17",
 		"runner": "zorulda",
-		"playedDate": "2021-06-11"
+		"playedDate": "2021-06-11",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=oWVtq8SMPHs"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-05-20",
 		"runner": "zorulda",
-		"playedDate": "2021-06-06"
+		"playedDate": "2021-06-06",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=EPLT-Xsc-9A"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-05-49",
 		"runner": "zorulda",
-		"playedDate": "2021-05-24"
+		"playedDate": "2021-05-24",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=CV-4y0H1m_M"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-05-59",
 		"runner": "zorulda",
-		"playedDate": "2021-02-22"
+		"playedDate": "2021-02-22",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=R1bVX_FLtq8"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-06-41",
 		"runner": "zorulda",
-		"playedDate": "2021-02-01"
+		"playedDate": "2021-02-01",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=TvJxRU81ays"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-08-01",
 		"runner": "zorulda",
-		"playedDate": "2021-01-16"
+		"playedDate": "2021-01-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=ZlGgH835Nys"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-08-12",
 		"runner": "zorulda",
-		"playedDate": "2020-12-30"
+		"playedDate": "2020-12-30",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=QVa2daNy5zg"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-09-15",
 		"runner": "Znernicus",
-		"playedDate": "2019-12-22"
+		"playedDate": "2019-12-22",
+		"originalSources": [
+			"https://www.twitch.tv/videos/525213395"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-11-21",
 		"runner": "Znernicus",
-		"playedDate": "2019-12-21"
+		"playedDate": "2019-12-21",
+		"originalSources": [
+			"https://www.twitch.tv/videos/524755544"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-12-11",
 		"runner": "Znernicus",
-		"playedDate": "2017-12-16"
+		"playedDate": "2017-12-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=UXDjBt6NmbQ"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-14-42",
 		"runner": "Znernicus",
-		"playedDate": "2017-12-04"
+		"playedDate": "2017-12-04",
+		"originalSources": [
+			"https://www.twitch.tv/videos/206841076"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-15-47",
 		"runner": "Znernicus",
-		"playedDate": "2017-12-03"
+		"playedDate": "2017-12-03",
+		"originalSources": [
+			"https://www.twitch.tv/videos/206576089"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-16-24",
 		"runner": "Znernicus",
-		"playedDate": "2017-11-28"
+		"playedDate": "2017-11-28",
+		"originalSources": [
+			"https://www.twitch.tv/videos/205299382"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-16-49",
 		"runner": "Znernicus",
-		"playedDate": "2017-11-26"
+		"playedDate": "2017-11-26",
+		"originalSources": [
+			"https://www.twitch.tv/videos/204399442"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-17-36",
 		"runner": "Znernicus",
-		"playedDate": "2017-11-25"
+		"playedDate": "2017-11-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/204335073"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-17-45",
 		"runner": "Ballaam",
-		"playedDate": "2017-11-22"
+		"playedDate": "2017-11-22",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=E6yKgt2-GGM"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-17-52",
 		"runner": "TJ Blakely",
-		"playedDate": "2016-04-30"
+		"playedDate": "2016-04-30",
+		"originalSources": [
+			"https://www.twitch.tv/videos/63819789"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-19-07",
 		"runner": "TJ Blakely",
-		"playedDate": "2016-02-05"
+		"playedDate": "2016-02-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45672307"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1933,6 +2014,9 @@
 		"platform": "N64",
 		"time": "2-26-29",
 		"runner": "TJ Blakely",
-		"playedDate": "2015-08-24"
+		"playedDate": "2015-08-24",
+		"originalSources": [
+			"https://www.twitch.tv/videos/12629303"
+		]
 	}
 ]
