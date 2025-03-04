@@ -668,21 +668,24 @@
 		"platform": "N64",
 		"time": "0-28-03",
 		"runner": "signakong",
-		"playedDate": "2015-07-10"
+		"playedDate": "2015-07-10",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-28-21",
 		"runner": "signakong",
-		"playedDate": "2015-07-02"
+		"playedDate": "2015-07-02",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-28-22",
 		"runner": "signakong",
-		"playedDate": "2015-07-01"
+		"playedDate": "2015-07-01",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
@@ -819,42 +822,48 @@
 		"platform": "N64",
 		"time": "0-43-57",
 		"runner": "RingRush",
-		"playedDate": "2013-07-22"
+		"playedDate": "2013-07-22",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-44-15",
 		"runner": "RingRush",
-		"playedDate": "2013-07-02"
+		"playedDate": "2013-07-02",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-44-44",
 		"runner": "RingRush",
-		"playedDate": "2013-06-08"
+		"playedDate": "2013-06-08",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-44-45",
 		"runner": "RingRush",
-		"playedDate": "2013-05-26"
+		"playedDate": "2013-05-26",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-45-36",
 		"runner": "RingRush",
-		"playedDate": "2013-01-19"
+		"playedDate": "2013-01-19",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-45-37",
 		"runner": "RingRush",
-		"playedDate": "2012-12-07"
+		"playedDate": "2012-12-07",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
@@ -882,21 +891,24 @@
 		"platform": "N64",
 		"time": "0-47-18",
 		"runner": "RingRush",
-		"playedDate": "2012-07-06"
+		"playedDate": "2012-07-06",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-47-21",
 		"runner": "RingRush",
-		"playedDate": "2012-07-04"
+		"playedDate": "2012-07-04",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-47-55",
 		"runner": "RingRush",
-		"playedDate": "2012-06-25"
+		"playedDate": "2012-06-25",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
@@ -910,35 +922,40 @@
 		"platform": "N64",
 		"time": "0-48-09",
 		"runner": "RingRush",
-		"playedDate": "2012-06-10"
+		"playedDate": "2012-06-10",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-48-29",
 		"runner": "RingRush",
-		"playedDate": "2012-05-23"
+		"playedDate": "2012-05-23",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-48-51",
 		"runner": "RingRush",
-		"playedDate": "2012-05-21"
+		"playedDate": "2012-05-21",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-49-14",
 		"runner": "RingRush",
-		"playedDate": "2012-05-07"
+		"playedDate": "2012-05-07",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-50-34",
 		"runner": "RingRush",
-		"playedDate": "2012-05-04"
+		"playedDate": "2012-05-04",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
@@ -1441,7 +1458,8 @@
 		"platform": "N64",
 		"time": "2-39-41",
 		"runner": "2dos",
-		"playedDate": "2014-xx-xx"
+		"playedDate": "2014-xx-xx",
+		"isMissing": true
 	},
 	{
 		"category": "No Levels Early",
@@ -1837,7 +1855,11 @@
 		"platform": "VC",
 		"time": "2-24-14",
 		"runner": "2dos",
-		"playedDate": "2015-04-28"
+		"playedDate": "2015-04-28",
+		"isMissing": true,
+		"originalSources": [
+			"https://www.twitch.tv/videos/4480076"
+		]
 	},
 	{
 		"category": "No Levels Early",

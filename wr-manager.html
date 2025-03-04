@@ -31,9 +31,13 @@
 
         function refreshRuns() {
             let runsToUploadDOM = '';
+            let runsToUploadCount = 0;
             let runsUploadedDOM = '';
+            let runsUploadedCount = 0;
             let uncategorisedRunsDOM = '';
+            let uncategorisedRunsCount = 0;
             let missingRunsDOM = '';
+            let missingRunsCount = 0;
             for (const i in runs) {
                 const run = runs[i];
                 const isFullyArchived =
@@ -42,16 +46,22 @@
                 const hasSource = Array.isArray(run.originalSources) && run.originalSources.length > 0;
                 if (isFullyArchived) {
                     runsUploadedDOM += formatRunOption(i, run);
+                    runsUploadedCount++;
                 } else {
                     if (run.isMissing) {
                         missingRunsDOM += formatRunOption(i, run);
+                        missingRunsCount++;
                     } else if (hasSource) {
                         runsToUploadDOM += formatRunOption(i, run);
+                        runsToUploadCount++;
                     } else {
                         uncategorisedRunsDOM += formatRunOption(i, run);
+                        uncategorisedRunsCount++;
                     }
                 }
             }
+
+            console.log(`Runs refreshed! ${runsToUploadCount} runs to upload, ${runsUploadedCount} runs uploaded, ${uncategorisedRunsCount} runs uncategorised, ${missingRunsCount} runs missing`);
 
             document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
             document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
