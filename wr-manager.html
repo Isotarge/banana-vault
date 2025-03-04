@@ -159,6 +159,11 @@
                 && oneRun.category === anotherRun.category;
         }
 
+        function isSamePlatform(oneRun, anotherRun) {
+            return (oneRun != null && anotherRun != null)
+                && oneRun.platform === anotherRun.platform;
+        }
+
         function isSameRun(oneRun, anotherRun) {
             return (oneRun != null && anotherRun != null) &&
                 oneRun.category === anotherRun.category &&
@@ -214,12 +219,15 @@
             return anotherRunPlayedDate > runPlayedDate || (runPlayedDate == anotherRunPlayedDate && isFaster(oneRun, anotherRun));
         }
 
-        // TODO: Ensure same platform
         function getPreviousRun(run) {
             let previousRun = null;
             for (const possiblePreviousRun of runs) {
                 // The previous run must be of the same category as the current run
                 if (!isSameCategory(run, possiblePreviousRun)) {
+                    continue;
+                }
+                // The previous run must be on the same platform as the current run
+                if (!isSamePlatform(run, possiblePreviousRun)) {
                     continue;
                 }
                 // The previous run must not be the same run as the current run
@@ -248,12 +256,15 @@
             return previousRun;
         }
 
-        // TODO: Ensure same platform
         function getNextRun(run) {
             let nextRun = null;
             for (const possibleNextRun of runs) {
                 // The next run must be of the same category as the current run
                 if (!isSameCategory(run, possibleNextRun)) {
+                    continue;
+                }
+                // The next run must be on the same platform as the current run
+                if (!isSamePlatform(run, possibleNextRun)) {
                     continue;
                 }
                 // The next run must not be the same run as the current run
