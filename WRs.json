@@ -20,35 +20,50 @@
 		"platform": "N64",
 		"time": "6-17-34",
 		"runner": "Znernicus",
-		"playedDate": "2014-10-30"
+		"playedDate": "2014-10-30",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45087924"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-27-30",
 		"runner": "Znernicus",
-		"playedDate": "2014-06-20"
+		"playedDate": "2014-06-20",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48927327"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-36-10",
 		"runner": "Znernicus",
-		"playedDate": "2014-02-09"
+		"playedDate": "2014-02-09",
+		"originalSources": [
+			"https://www.twitch.tv/videos/46528370"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-37-12",
 		"runner": "Cfox",
-		"playedDate": "2013-12-01"
+		"playedDate": "2013-12-01",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45727170"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-45-02",
 		"runner": "Cfox",
-		"playedDate": "2013-07-08"
+		"playedDate": "2013-07-08",
+		"originalSources": [
+			"https://www.twitch.tv/videos/50251388"
+		]
 	},
 	{
 		"category": "101%",
@@ -71,7 +86,10 @@
 		"platform": "N64",
 		"time": "6-54-20",
 		"runner": "Cfox",
-		"playedDate": "2013-06-13"
+		"playedDate": "2013-06-13",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=ug5zZGkKZp0"
+		]
 	},
 	{
 		"category": "101%",
@@ -304,84 +322,122 @@
 		"platform": "VC",
 		"time": "5-34-17",
 		"runner": "Connor75",
-		"playedDate": "2017-02-18"
+		"playedDate": "2017-02-18",
+		"originalSources": [
+			"https://www.twitch.tv/videos/123334217"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-34-37",
 		"runner": "Connor75",
-		"playedDate": "2017-02-09"
+		"playedDate": "2017-02-09",
+		"originalSources": [
+			"https://www.twitch.tv/videos/121008968"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-37-16",
 		"runner": "Connor75",
-		"playedDate": "2017-01-07"
+		"playedDate": "2017-01-07",
+		"originalSources": [
+			"https://www.twitch.tv/videos/113272162"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-37-28",
 		"runner": "Connor75",
-		"playedDate": "2016-09-04"
+		"playedDate": "2016-09-04",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=JZVuVwq0NmY"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-39-48",
 		"runner": "Connor75",
-		"playedDate": "2016-08-24"
+		"playedDate": "2016-08-24",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=86qecuRZ9os"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-41-20",
 		"runner": "Connor75",
-		"playedDate": "2016-06-16"
+		"playedDate": "2016-06-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=0pADf1FNQRk"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-42-15",
 		"runner": "Connor75",
-		"playedDate": "2016-06-11"
+		"playedDate": "2016-06-11",
+		"originalSources": [
+			"https://www.twitch.tv/videos/71938833"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-43-27",
 		"runner": "Connor75",
-		"playedDate": "2016-06-10"
+		"playedDate": "2016-06-10",
+		"originalSources": [
+			"https://www.twitch.tv/videos/71775675"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-45-39",
 		"runner": "Connor75",
-		"playedDate": "2016-02-14"
+		"playedDate": "2016-02-14",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=StXUi9tz8gs"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-50-59",
 		"runner": "Connor75",
-		"playedDate": "2015-12-22"
+		"playedDate": "2015-12-22",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=weKq2dl-XgE"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-58-01",
 		"runner": "2dos",
-		"playedDate": "2015-06-26"
+		"playedDate": "2015-06-26",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=CfjdfqbBEOQ"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "N64",
 		"time": "6-41-42",
 		"runner": "Cfox",
-		"playedDate": "2013-07-13"
+		"playedDate": "2013-07-13",
+		"originalSources": [
+			"https://www.twitch.tv/videos/50215905",
+			"https://www.twitch.tv/videos/50215873",
+			"https://www.twitch.tv/videos/50215884"
+		]
 	},
 	{
 		"category": "101%",
@@ -402,28 +458,44 @@
 		"platform": "VC",
 		"time": "5-44-21",
 		"runner": "Connor75",
-		"playedDate": "2016-04-08"
+		"playedDate": "2016-04-08",
+		"originalSources": [
+			"https://www.twitch.tv/videos/59400621",
+			"https://www.twitch.tv/videos/59401132"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-56-21",
 		"runner": "Connor75",
-		"playedDate": "2015-10-22"
+		"playedDate": "2015-10-22",
+		"originalSources": [
+			"https://www.twitch.tv/videos/21955800",
+			"https://www.twitch.tv/videos/21956412"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "5-56-59",
 		"runner": "Connor75",
-		"playedDate": "2015-10-06"
+		"playedDate": "2015-10-06",
+		"originalSources": [
+			"https://www.twitch.tv/videos/19374362",
+			"https://www.twitch.tv/videos/19374670"
+		]
 	},
 	{
 		"category": "101%",
 		"platform": "VC",
 		"time": "6-09-50",
 		"runner": "2dos",
-		"playedDate": "2015-05-27"
+		"playedDate": "2015-05-27",
+		"originalSources": [
+			"https://www.twitch.tv/videos/5495731",
+			"https://www.twitch.tv/videos/5495743"
+		]
 	},
 	{
 		"category": "101%",

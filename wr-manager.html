@@ -61,7 +61,10 @@
                 }
             }
 
-            console.log(`Runs refreshed! ${runsToUploadCount} runs to upload, ${runsUploadedCount} runs uploaded, ${uncategorisedRunsCount} runs uncategorised, ${missingRunsCount} runs missing`);
+            document.getElementById("header-to-upload").innerText = `Runs to Upload (${runsToUploadCount})`;
+            document.getElementById("header-uploaded").innerText = `Uploaded Runs (${runsUploadedCount})`;
+            document.getElementById("header-uncategorised").innerText = `Uncategorised Runs (${uncategorisedRunsCount})`;
+            document.getElementById("header-missing").innerText = `Missing Runs (${missingRunsCount})`;
 
             document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
             document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
@@ -388,19 +391,19 @@
         <button onclick="importJSON()">Import JSON</button>
         <button onclick="exportJSON()">Export JSON</button>
     </form>
-    <h2>Runs to Upload</h2>
+    <h2 id="header-to-upload">Runs to Upload</h2>
     <select name="run-to-upload" id="run-to-upload" onchange="selectRun('run-to-upload')">
         <option>Please import JSON</option>
     </select>
-    <h2>Uploaded Runs</h2>
+    <h2 id="header-uploaded">Uploaded Runs</h2>
     <select name="uploaded-run" id="uploaded-run" onchange="selectRun('uploaded-run')">
         <option>Please import JSON</option>
     </select>
-    <h2>Uncategorised Runs</h2>
+    <h2 id="header-uncategorised">Uncategorised Runs</h2>
     <select name="uncategorised-run" id="uncategorised-run" onchange="selectRun('uncategorised-run')">
         <option>Please import JSON</option>
     </select>
-    <h2>Missing Runs</h2>
+    <h2 id="header-missing">Missing Runs</h2>
     <select name="missing-run" id="missing-run" onchange="selectRun('missing-run')">
         <option>Please import JSON</option>
     </select>
