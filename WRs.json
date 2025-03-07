@@ -451,7 +451,10 @@
 		"platform": "N64",
 		"time": "9-02-00",
 		"runner": "deutsche_joe",
-		"playedDate": "2006-08-04"
+		"playedDate": "2006-08-04",
+		"originalSources": [
+			"https://archive.org/details/DonkeyKong64_101p_902"
+		]
 	},
 	{
 		"category": "101%",
@@ -756,28 +759,40 @@
 		"platform": "N64",
 		"time": "0-26-56",
 		"runner": "TJ Blakely",
-		"playedDate": "2016-05-23"
+		"playedDate": "2016-05-23",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=YICef4n-9Rg"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-27-01",
 		"runner": "TJ Blakely",
-		"playedDate": "2016-05-17"
+		"playedDate": "2016-05-17",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=5uAkDRZCZqQ"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-27-09",
 		"runner": "TJ Blakely",
-		"playedDate": "2016-05-15"
+		"playedDate": "2016-05-15",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=2iGN7N1Dbww"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-27-17",
 		"runner": "TJ Blakely",
-		"playedDate": "2015-09-30"
+		"playedDate": "2015-09-30",
+		"originalSources": [
+			"https://www.twitch.tv/videos/18589068"
+		]
 	},
 	{
 		"category": "Any%",
@@ -815,21 +830,31 @@
 		"platform": "N64",
 		"time": "0-28-32",
 		"runner": "Isotarge",
-		"playedDate": "2015-03-19"
+		"playedDate": "2015-03-19",
+		"originalSources": [
+			"https://www.twitch.tv/videos/40852783",
+			"https://www.youtube.com/watch?v=vIt4sByxr0E"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-29-29",
 		"runner": "RingRush",
-		"playedDate": "2014-08-07"
+		"playedDate": "2014-08-07",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=X52g3v_Bibo"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-29-43",
 		"runner": "Znernicus",
-		"playedDate": "2014-08-07"
+		"playedDate": "2014-08-07",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=BnMlxUtAplg"
+		]
 	},
 	{
 		"category": "Any%",
@@ -938,7 +963,10 @@
 		"platform": "N64",
 		"time": "0-43-12",
 		"runner": "RingRush",
-		"playedDate": "2013-08-12"
+		"playedDate": "2013-08-12",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=fMSpiR5FMHQ"
+		]
 	},
 	{
 		"category": "Any%",
@@ -993,7 +1021,10 @@
 		"platform": "N64",
 		"time": "0-46-21",
 		"runner": "Kosmic",
-		"playedDate": "2012-12-05"
+		"playedDate": "2012-12-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48105950"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1242,28 +1273,40 @@
 		"platform": "VC",
 		"time": "0-24-07",
 		"runner": "signakong",
-		"playedDate": "2023-10-31"
+		"playedDate": "2023-10-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1964921249"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-11",
 		"runner": "signakong",
-		"playedDate": "2023-09-06"
+		"playedDate": "2023-09-06",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1918590998"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-13",
 		"runner": "signakong",
-		"playedDate": "2023-09-03"
+		"playedDate": "2023-09-03",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1915877742"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-17",
 		"runner": "signakong",
-		"playedDate": "2023-05-31"
+		"playedDate": "2023-05-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1833999497"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1305,84 +1348,120 @@
 		"platform": "VC",
 		"time": "0-24-58",
 		"runner": "signakong",
-		"playedDate": "2018-02-23"
+		"playedDate": "2018-02-23",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=KqyYImaHvPs"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-59",
 		"runner": "Falcon",
-		"playedDate": "2017-10-01"
+		"playedDate": "2017-10-01",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=8esE2rsrM2A"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-05",
 		"runner": "Falcon",
-		"playedDate": "2017-09-30"
+		"playedDate": "2017-09-30",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=7O2pmFsMul0"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-14",
 		"runner": "Falcon",
-		"playedDate": "2017-09-24"
+		"playedDate": "2017-09-24",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=Sxl1pT7MMzU"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-19",
 		"runner": "Falcon",
-		"playedDate": "2017-09-23"
+		"playedDate": "2017-09-23",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=wVPcDVFBzeE"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-21",
 		"runner": "Falcon",
-		"playedDate": "2017-09-20"
+		"playedDate": "2017-09-20",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=mOS8riY0DHg"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-25",
 		"runner": "Falcon",
-		"playedDate": "2017-08-16"
+		"playedDate": "2017-08-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=GwXc8bCjXuo"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-25-53",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-08-16"
+		"playedDate": "2017-08-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=NudSTAgER2s"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-26-06",
 		"runner": "Falcon",
-		"playedDate": "2017-08-16"
+		"playedDate": "2017-08-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=bR-qUoCEjGI"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-26-09",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-06-21"
+		"playedDate": "2017-06-21",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=b4J5IOZTi1M"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-26-16",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-10-29"
+		"playedDate": "2016-10-29",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=2aj5LTVfdl4"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-45-11",
 		"runner": "Cfox",
-		"playedDate": "2013-04-18"
+		"playedDate": "2013-04-18",
+		"originalSources": [
+			"https://www.twitch.tv/videos/50663617"
+		]
 	},
 	{
 		"category": "Any%",
