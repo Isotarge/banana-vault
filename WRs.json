@@ -1313,35 +1313,50 @@
 		"platform": "VC",
 		"time": "0-24-30",
 		"runner": "signakong",
-		"playedDate": "2020-11-02"
+		"playedDate": "2020-11-02",
+		"originalSources": [
+			"https://www.twitch.tv/videos/789764387"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-34",
 		"runner": "signakong",
-		"playedDate": "2020-09-14"
+		"playedDate": "2020-09-14",
+		"originalSources": [
+			"https://www.twitch.tv/videos/740008101"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-39",
 		"runner": "signakong",
-		"playedDate": "2020-04-25"
+		"playedDate": "2020-04-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/602220310"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-42",
 		"runner": "signakong",
-		"playedDate": "2020-04-05"
+		"playedDate": "2020-04-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/583809861"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "VC",
 		"time": "0-24-51",
 		"runner": "signakong",
-		"playedDate": "2019-09-11"
+		"playedDate": "2019-09-11",
+		"originalSources": [
+			"https://www.twitch.tv/videos/479957484"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1756,140 +1771,202 @@
 		"platform": "VC",
 		"time": "1-59-05",
 		"runner": "Connor75",
-		"playedDate": "2024-01-27"
+		"playedDate": "2024-01-27",
+		"originalSources": [
+			"https://www.twitch.tv/videos/2045940307",
+			"https://www.youtube.com/watch?v=ROkYF40HCS8"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "1-59-34",
 		"runner": "toyomana",
-		"playedDate": "2022-07-03"
+		"playedDate": "2022-07-03",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1521038099"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "1-59-53",
 		"runner": "toyomana",
-		"playedDate": "2022-03-29"
+		"playedDate": "2022-03-29",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1440136077"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-00-12",
 		"runner": "Connor75",
-		"playedDate": "2021-12-11"
+		"playedDate": "2021-12-11",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1230981232",
+			"https://www.youtube.com/watch?v=r9Rp8BDgc-k"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-00-58",
 		"runner": "toyomana",
-		"playedDate": "2021-06-10"
+		"playedDate": "2021-06-10",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1051731496"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-01-43",
 		"runner": "toyomana",
-		"playedDate": "2021-05-22"
+		"playedDate": "2021-05-22",
+		"originalSources": [
+			"https://www.twitch.tv/videos/1031247518"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-01-59",
 		"runner": "Kiwikiller67",
-		"playedDate": "2020-01-05"
+		"playedDate": "2020-01-05",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=9c7P_MiF-QI"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-02-13",
 		"runner": "Kiwikiller67",
-		"playedDate": "2019-12-01"
+		"playedDate": "2019-12-01",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=U-9vUHyKpbQ"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-02-23",
 		"runner": "Kiwikiller67",
-		"playedDate": "2019-06-30"
+		"playedDate": "2019-06-30",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=eI4glWAwak8"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-02-25",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-12-23"
+		"playedDate": "2017-12-23",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=98-recmorOA"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-02-42",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-12-16"
+		"playedDate": "2017-12-16",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=jYFH9t83LN4"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-03-12",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-12-12"
+		"playedDate": "2017-12-12",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=lRbiMw0eyJs"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-03-43",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-12-02"
+		"playedDate": "2017-12-02",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=dDDBOIotVDU"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-04-05",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-11-11"
+		"playedDate": "2017-11-11",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=xRxa_CxLISQ"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-04-48",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-11-07"
+		"playedDate": "2017-11-07",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=d5V-RTQtPUc"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-04-58",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-10-29"
+		"playedDate": "2017-10-29",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=-2a8L3fK28w"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-05-37",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-08-15"
+		"playedDate": "2017-08-15",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=SPBxbDDjQiM"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-05-42",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-06-27"
+		"playedDate": "2017-06-27",
+		"originalSources": [
+			"https://www.twitch.tv/videos/154943360"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-05-46",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-04-23"
+		"playedDate": "2017-04-23",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=cU-lfgqllDE"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-06-03",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-04-01"
+		"playedDate": "2017-04-01",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=uxUcn1pceBc"
+		]
 	},
 	{
 		"category": "No Levels Early",
