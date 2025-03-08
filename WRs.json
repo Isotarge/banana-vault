@@ -1483,7 +1483,11 @@
 		"platform": "N64",
 		"time": "1-12-52",
 		"runner": "KAS",
-		"playedDate": "2010-02-05"
+		"playedDate": "2010-02-05",
+		"originalSources": [
+			"https://www.nicovideo.jp/watch/sm9621115",
+			"https://www.nicovideo.jp/watch/sm9621884"
+		]
 	},
 	{
 		"category": "Any%",
@@ -2015,91 +2019,130 @@
 		"platform": "VC",
 		"time": "2-10-32",
 		"runner": "EmoArbiter",
-		"playedDate": "2019-02-19"
+		"playedDate": "2019-02-19",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=_MgyydSjj2s"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-10-35",
 		"runner": "Kiwikiller67",
-		"playedDate": "2015-12-15"
+		"playedDate": "2015-12-15",
+		"originalSources": [
+			"https://www.twitch.tv/videos/30174044"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-11-07",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-11-23"
+		"playedDate": "2015-11-23",
+		"originalSources": [
+			"https://www.twitch.tv/videos/27369575"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-11-36",
 		"runner": "Kiwikiller67",
-		"playedDate": "2015-11-10"
+		"playedDate": "2015-11-10",
+		"originalSources": [
+			"https://www.twitch.tv/videos/25145676"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-12-10",
 		"runner": "Kiwikiller67",
-		"playedDate": "2015-10-19"
+		"playedDate": "2015-10-19",
+		"originalSources": [
+			"https://www.twitch.tv/videos/21514518"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-12-25",
 		"runner": "2dos",
-		"playedDate": "2015-09-25"
+		"playedDate": "2015-09-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/17736870"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-13-05",
 		"runner": "2dos",
-		"playedDate": "2015-09-16"
+		"playedDate": "2015-09-16",
+		"originalSources": [
+			"https://www.twitch.tv/videos/16386165"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-13-24",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-08-13"
+		"playedDate": "2015-08-13",
+		"originalSources": [
+			"https://www.twitch.tv/videos/10812994"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-13-49",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-08-07"
+		"playedDate": "2015-08-07",
+		"originalSources": [
+			"https://www.twitch.tv/videos/10084030"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-14-16",
 		"runner": "2dos",
-		"playedDate": "2015-08-05"
+		"playedDate": "2015-08-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/9723101"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-15-13",
 		"runner": "2dos",
-		"playedDate": "2015-07-17"
+		"playedDate": "2015-07-17",
+		"originalSources": [
+			"https://www.twitch.tv/videos/7903548"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-15-18",
 		"runner": "2dos",
-		"playedDate": "2015-07-12"
+		"playedDate": "2015-07-12",
+		"originalSources": [
+			"https://www.twitch.tv/videos/7411033"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-15-20",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-07-07"
+		"playedDate": "2015-07-07",
+		"originalSources": [
+			"https://www.twitch.tv/videos/39805042"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2113,7 +2156,10 @@
 		"platform": "VC",
 		"time": "2-19-42",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-05-30"
+		"playedDate": "2015-05-30",
+		"originalSources": [
+			"https://www.twitch.tv/videos/43954149"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2159,7 +2205,11 @@
 		"platform": "VC",
 		"time": "2-18-34",
 		"runner": "EmoArbiter",
-		"playedDate": "2015-05-31"
+		"playedDate": "2015-05-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/43938522",
+			"https://www.twitch.tv/videos/43938572"
+		]
 	},
 	{
 		"category": "No Levels Early",
