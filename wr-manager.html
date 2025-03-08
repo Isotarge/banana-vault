@@ -15,12 +15,8 @@
     <script>
         // Add links to help support original runners
         let runners = {
-            "Steven Zwartjes": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
-            "Alex Penev": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
+            "Steven Zwartjes": [],
+            "Alex Penev": [],
             "Znernicus": [
                 "https://www.youtube.com/@Znernicus",
                 "https://www.twitch.tv/znernicus",
@@ -39,9 +35,7 @@
                 "https://www.speedrun.com/users/Cfox",
 
             ],
-            "leftysheroes": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
+            "leftysheroes": [],
             "signakong": [
                 "https://www.youtube.com/@signakong",
                 "https://www.twitch.tv/signakong",
@@ -56,11 +50,8 @@
                 "https://www.speedrun.com/users/Connor75",
                 "https://twitter.com/_Connor75",
             ],
-            "Falcon": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
+            "Falcon": [],
             "2dos": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
                 "https://dk64randomizer.com/",
                 "https://www.twitch.tv/2dos",
                 "https://www.youtube.com/@2dos",
@@ -69,11 +60,12 @@
                 "https://twitter.com/2dosSRL",
                 "https://github.com/2dos",
             ],
-            "deutsch_joe": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
+            "deutsch_joe": [],
             "zorulda": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.twitch.tv/zorulda",
+                "https://www.youtube.com/@zoruldasrl",
+                "https://www.speedrun.com/users/zorulda",
+                "https://twitter.com/zorulda",
             ],
             "TJ Blakely": [
                 "https://www.youtube.com/@TJBlakely",
@@ -93,13 +85,14 @@
                 "https://integer-max.itch.io/",
                 "https://twitter.com/IntegerMax",
                 "https://www.speedrun.com/users/Isotarge",
+                "https://tasvideos.org/Users/Profile/Isotarge",
             ],
             "RingRush": [
                 "https://www.youtube.com/@RingRush",
                 "https://twitter.com/rusherofrings",
+                "https://tasvideos.org/Users/Profile/RingRush",
             ],
             "Kosmic": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
                 "https://www.youtube.com/@Kosmicd12",
                 "https://www.twitch.tv/kosmic",
                 "https://www.patreon.com/kosmicd12",
@@ -108,14 +101,11 @@
                 "https://twitter.com/kosmicd12",
             ],
             "Manocheese": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.youtube.com/user/cheeseoman",
+                "https://sites.google.com/site/manocheese",
             ],
-            "PMIT": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
-            "rdrunner": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
-            ],
+            "PMIT": [],
+            "rdrunner": [],
             "Kiwikiller67": [
                 "https://www.youtube.com/@Kiwikiller67",
                 "https://www.twitch.tv/kiwikiller67",
@@ -123,7 +113,7 @@
                 "https://www.speedrun.com/users/Kiwikiller67",
             ],
             "KAS": [
-                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.nicovideo.jp/user/4799376",
             ],
             "Awhitmore": [
                 "https://www.youtube.com/@ASpeedTeachMore",
@@ -169,6 +159,7 @@
                 "https://github.com/theballaam96",
                 "https://www.youtube.com/@lookatthewindow3599",
                 "https://www.speedrun.com/users/theballaam96",
+                "https://tasvideos.org/Users/Profile/theballaam96",
             ],
         };
 
@@ -472,8 +463,12 @@
 
         function getRunnerLinks(runnerName) {
             const runner = runners[runnerName];
-            if (runner) {
-                // TODO: Add links
+            if (Array.isArray(runner) && runner.length > 0) {
+                let links = `\n\nSupport the runner at:\n`;
+                for (const link of runner) {
+                    links += `- ${link}\n`;
+                }
+                return links;
             }
             return '';
         }
@@ -489,6 +484,7 @@
             }
             description += sourcesToList(run.originalSources, 'Original');
             description += sourcesToList(run.uploadedArchive, 'Archive');
+            description += getRunnerLinks(run.runner);
             return description;
         }
 
