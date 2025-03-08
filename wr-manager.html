@@ -13,6 +13,135 @@
         }
     </style>
     <script>
+        // Add links to help support original runners
+        let runners = {
+            "Steven Zwartjes": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Alex Penev": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Znernicus": [
+                "https://www.youtube.com/@Znernicus",
+                "https://www.twitch.tv/znernicus",
+                "https://bsky.app/profile/znernicus.bsky.social",
+                "https://twitter.com/Znernicus",
+                "https://www.speedrun.com/users/Znernicus",
+                "https://znernicus.bandcamp.com/",
+                "https://soundcloud.com/user-460448267",
+                "https://www.instagram.com/znernicus",
+            ],
+            "Cfox": [
+                "https://www.youtube.com/@Cfoxx7",
+                "https://www.twitch.tv/cfox",
+                "https://bsky.app/profile/cfox7.bsky.social",
+                "https://twitter.com/cfoxTwitch",
+                "https://www.speedrun.com/users/Cfox",
+
+            ],
+            "leftysheroes": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "signakong": [
+                "https://www.youtube.com/@signakong",
+                "https://www.twitch.tv/signakong",
+                "https://www.speedrun.com/users/signakong",
+                "https://twitter.com/signakong",
+            ],
+            "Connor75": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Falcon": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "2dos": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://dk64randomizer.com/",
+                "https://bsky.app/profile/2dos.dk64randomizer.com",
+            ],
+            "deutsch_joe": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "zorulda": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "TJ Blakely": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.youtube.com/@TJBlakely",
+                "https://www.twitch.tv/tjblakely",
+                "https://bsky.app/profile/tjblakely.bsky.social",
+                "https://www.speedrun.com/users/TJBlakely",
+                "https://twitter.com/TJBlakely_",
+            ],
+            "Isotarge": [
+                "https://www.youtube.com/@Isotarge",
+                "https://www.twitch.tv/isotarge",
+                "https://bsky.app/profile/isotarge.bsky.social",
+                "https://github.com/Isotarge",
+                "https://infosec.exchange/@isotarge",
+                "https://twitter.com/Isotarge",
+                "https://thegreywar.com/",
+                "https://integer-max.itch.io/",
+                "https://twitter.com/IntegerMax",
+                "https://www.speedrun.com/users/Isotarge",
+            ],
+            "RingRush": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.youtube.com/@RingRush",
+            ],
+            "Kosmic": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Manocheese": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "PMIT": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "rdrunner": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Kiwikiller67": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://www.youtube.com/@Kiwikiller67",
+            ],
+            "KAS": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Awhitmore": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Bismuth": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://linktr.ee/bismuth9",
+                "https://www.patreon.com/bismuth9",
+                "https://www.youtube.com/@Bismuth9",
+                "https://www.twitch.tv/bismuth9",
+                "https://bsky.app/profile/bismuthsr.bsky.social",
+                "https://x.com/Bismuthi",
+                "https://www.youtube.com/@Bismuth-Music",
+                "https://soundcloud.com/bismuth9",
+            ],
+            "toyomana": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "EmoArbiter": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "RandomSauce": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+            ],
+            "Ballaam": [
+                // TODO: Add links (eg. YouTube, Twitch, Twitter, bsky)
+                "https://bsky.app/profile/ballaam.dk64randomizer.com",
+                "https://dk64randomizer.com/",
+                "https://www.twitch.tv/theballaam96",
+                "https://www.youtube.com/@Ballaam",
+                "https://www.youtube.com/@lookatthewindow3599",
+                "https://www.speedrun.com/users/theballaam96",
+            ],
+        };
+
         let runs = []; // Loaded from JSON
         let selectedRunIndex = 0;
 
@@ -309,6 +438,14 @@
                 }
             }
             return nextRun;
+        }
+
+        function getRunnerLinks(runnerName) {
+            const runner = runners[runnerName];
+            if (runner) {
+                // TODO: Add links
+            }
+            return '';
         }
 
         function generateDescription(run) {

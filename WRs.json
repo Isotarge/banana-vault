@@ -450,7 +450,7 @@
 		"category": "101%",
 		"platform": "N64",
 		"time": "9-02-00",
-		"runner": "deutsche_joe",
+		"runner": "deutsch_joe",
 		"playedDate": "2006-08-04",
 		"originalSources": [
 			"https://archive.org/details/DonkeyKong64_101p_902"
@@ -1977,42 +1977,60 @@
 		"platform": "VC",
 		"time": "2-06-21",
 		"runner": "Kiwikiller67",
-		"playedDate": "2017-01-25"
+		"playedDate": "2017-01-25",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=NF9jThe0Ojs"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-07-01",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-11-20"
+		"playedDate": "2016-11-20",
+		"originalSources": [
+			"https://www.twitch.tv/videos/102210648"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-07-31",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-08-21"
+		"playedDate": "2016-08-21",
+		"originalSources": [
+			"https://www.twitch.tv/videos/84817715"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-08-44",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-06-21"
+		"playedDate": "2016-06-21",
+		"originalSources": [
+			"https://www.twitch.tv/videos/73780809"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-09-16",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-05-31"
+		"playedDate": "2016-05-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/69802707"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-09-27",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-04-01"
+		"playedDate": "2016-04-01",
+		"originalSources": [
+			"https://www.twitch.tv/videos/57914452"
+		]
 	},
 	{
 		"category": "No Levels Early",
