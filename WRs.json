@@ -1038,7 +1038,10 @@
 		"platform": "N64",
 		"time": "0-46-39",
 		"runner": "Kosmic",
-		"playedDate": "2012-11-18"
+		"playedDate": "2012-11-18",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48056704"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1116,7 +1119,11 @@
 		"platform": "N64",
 		"time": "0-52-17",
 		"runner": "Manocheese",
-		"playedDate": "2010-08-03"
+		"playedDate": "2010-08-03",
+		"originalSources": [
+			"https://speeddemosarchive.com/demo.pl?DonkeyKong64_NewGamePlus_SS_054",
+			"https://archive.org/details/2010-12-19-SDA_Speed_Runs"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1739,7 +1746,10 @@
 		"platform": "N64",
 		"time": "2-42-14",
 		"runner": "Bismuth",
-		"playedDate": "2014-02-05"
+		"playedDate": "2014-02-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/46483856"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1756,7 +1766,10 @@
 		"platform": "N64",
 		"time": "2-45-51",
 		"runner": "Bismuth",
-		"playedDate": "2013-12-27"
+		"playedDate": "2013-12-27",
+		"originalSources": [
+			"https://www.twitch.tv/videos/46024347"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1771,7 +1784,10 @@
 		"platform": "N64",
 		"time": "2-48-27",
 		"runner": "Bismuth",
-		"playedDate": "2013-12-04"
+		"playedDate": "2013-12-04",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45765519"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1785,7 +1801,10 @@
 		"platform": "N64",
 		"time": "2-54-35",
 		"runner": "Bismuth",
-		"playedDate": "2013-11-25"
+		"playedDate": "2013-11-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45652662"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1800,7 +1819,10 @@
 		"platform": "N64",
 		"time": "3-11-23",
 		"runner": "Bismuth",
-		"playedDate": "2013-11-22"
+		"playedDate": "2013-11-22",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45610291"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2276,7 +2298,11 @@
 		"platform": "VC",
 		"time": "2-09-30",
 		"runner": "Kiwikiller67",
-		"playedDate": "2016-02-23"
+		"playedDate": "2016-02-23",
+		"originalSources": [
+			"https://www.twitch.tv/videos/49779987",
+			"https://www.twitch.tv/videos/49778818"
+		]
 	},
 	{
 		"category": "No Levels Early",
