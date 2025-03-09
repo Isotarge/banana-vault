@@ -1581,98 +1581,140 @@
 		"platform": "N64",
 		"time": "2-26-43",
 		"runner": "2dos",
-		"playedDate": "2015-03-25"
+		"playedDate": "2015-03-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3944949"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-28-46",
 		"runner": "2dos",
-		"playedDate": "2015-03-04"
+		"playedDate": "2015-03-04",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3860201"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-31-23",
 		"runner": "2dos",
-		"playedDate": "2015-02-27"
+		"playedDate": "2015-02-27",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3840503"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-31-53",
 		"runner": "2dos",
-		"playedDate": "2015-02-13"
+		"playedDate": "2015-02-13",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3784512"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-32-49",
 		"runner": "2dos",
-		"playedDate": "2015-02-05"
+		"playedDate": "2015-02-05",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3757805"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-34-18",
 		"runner": "2dos",
-		"playedDate": "2015-01-30"
+		"playedDate": "2015-01-30",
+		"originalSources": [
+			"https://www.twitch.tv/videos/3737920"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-34-32",
 		"runner": "2dos",
-		"playedDate": "2014-09-25"
+		"playedDate": "2014-09-25",
+		"originalSources": [
+			"https://www.twitch.tv/videos/47699066"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-35-52",
 		"runner": "2dos",
-		"playedDate": "2014-09-02"
+		"playedDate": "2014-09-02",
+		"originalSources": [
+			"https://www.twitch.tv/videos/43391594"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-36-10",
 		"runner": "2dos",
-		"playedDate": "2014-08-16"
+		"playedDate": "2014-08-16",
+		"originalSources": [
+			"https://www.twitch.tv/videos/42768798"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-36-43",
 		"runner": "2dos",
-		"playedDate": "2014-07-26"
+		"playedDate": "2014-07-26",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48054750"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-36-47",
 		"runner": "2dos",
-		"playedDate": "2014-07-20"
+		"playedDate": "2014-07-20",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48172174"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-37-40",
 		"runner": "2dos",
-		"playedDate": "2014-06-24"
+		"playedDate": "2014-06-24",
+		"originalSources": [
+			"https://www.twitch.tv/videos/48703696"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-38-21",
 		"runner": "2dos",
-		"playedDate": "2014-06-07"
+		"playedDate": "2014-06-07",
+		"originalSources": [
+			"https://www.twitch.tv/videos/49042118"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "N64",
 		"time": "2-38-32",
 		"runner": "2dos",
-		"playedDate": "2014-05-06"
+		"playedDate": "2014-05-06",
+		"originalSources": [
+			"https://www.twitch.tv/videos/49365387"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1687,7 +1729,10 @@
 		"platform": "N64",
 		"time": "2-39-54",
 		"runner": "2dos",
-		"playedDate": "2014-03-04"
+		"playedDate": "2014-03-04",
+		"originalSources": [
+			"https://www.twitch.tv/videos/46860799"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -1701,7 +1746,10 @@
 		"platform": "N64",
 		"time": "2-45-39",
 		"runner": "2dos",
-		"playedDate": "2014-01-31"
+		"playedDate": "2014-01-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/46423601"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2167,7 +2215,10 @@
 		"platform": "VC",
 		"time": "2-18-51",
 		"runner": "2dos",
-		"playedDate": "2015-05-31"
+		"playedDate": "2015-05-31",
+		"originalSources": [
+			"https://www.twitch.tv/videos/5674194"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2184,14 +2235,20 @@
 		"platform": "VC",
 		"time": "2-20-50",
 		"runner": "2dos",
-		"playedDate": "2015-05-06"
+		"playedDate": "2015-05-06",
+		"originalSources": [
+			"https://www.twitch.tv/videos/4765327"
+		]
 	},
 	{
 		"category": "No Levels Early",
 		"platform": "VC",
 		"time": "2-23-28",
 		"runner": "2dos",
-		"playedDate": "2015-05-02"
+		"playedDate": "2015-05-02",
+		"originalSources": [
+			"https://www.twitch.tv/videos/4628529"
+		]
 	},
 	{
 		"category": "No Levels Early",
@@ -2209,7 +2266,10 @@
 		"platform": "VC",
 		"time": "2-25-46",
 		"runner": "2dos",
-		"playedDate": "2015-04-24"
+		"playedDate": "2015-04-24",
+		"originalSources": [
+			"https://www.twitch.tv/videos/4315499"
+		]
 	},
 	{
 		"category": "No Levels Early",
