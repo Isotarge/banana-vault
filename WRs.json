@@ -444,7 +444,21 @@
 		"platform": "N64",
 		"time": "7-36-54",
 		"runner": "Cfox",
-		"playedDate": "2012-06-29"
+		"playedDate": "2012-06-29",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=0lh1EnQs-gc",
+			"https://www.youtube.com/watch?v=kt6d1U54u-0",
+			"https://www.youtube.com/watch?v=7WxAv4HZ0dA",
+			"https://www.youtube.com/watch?v=lS979FkkUgo",
+			"https://www.youtube.com/watch?v=bWjOE5WFYVQ",
+			"https://www.youtube.com/watch?v=_YC47WA4kqs",
+			"https://www.youtube.com/watch?v=gpJPglqHu-k",
+			"https://www.youtube.com/watch?v=mPrxjjgvUUw",
+			"https://www.youtube.com/watch?v=BevZXj4RiGA",
+			"https://www.youtube.com/watch?v=7STdri2l3Go",
+			"https://www.youtube.com/watch?v=pr74q9_MNqU",
+			"https://www.youtube.com/watch?v=EUQb0rbkTOE"
+		]
 	},
 	{
 		"category": "101%",
@@ -933,14 +947,20 @@
 		"platform": "N64",
 		"time": "0-34-25",
 		"runner": "RingRush",
-		"playedDate": "2014-03-17"
+		"playedDate": "2014-03-17",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=cDcCY26znek"
+		]
 	},
 	{
 		"category": "Any%",
 		"platform": "N64",
 		"time": "0-42-18",
 		"runner": "RingRush",
-		"playedDate": "2013-12-22"
+		"playedDate": "2013-12-22",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=O3FxcOujj28"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1031,7 +1051,10 @@
 		"platform": "N64",
 		"time": "0-46-36",
 		"runner": "Cfox",
-		"playedDate": "2012-11-26"
+		"playedDate": "2012-11-26",
+		"originalSources": [
+			"https://www.youtube.com/watch?v=Fvu_Iwv5nCA"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1072,7 +1095,8 @@
 		"platform": "N64",
 		"time": "0-48-05",
 		"runner": "RingRush",
-		"playedDate": "2012-06-15"
+		"playedDate": "2012-06-15",
+		"isMissing": true
 	},
 	{
 		"category": "Any%",
@@ -1250,7 +1274,11 @@
 		"platform": "N64",
 		"time": "4-26-00",
 		"runner": "rdrunner",
-		"playedDate": "2006-11-15"
+		"playedDate": "2006-11-15",
+		"originalSources": [
+			"https://speeddemosarchive.com/demo.pl?DonkeyKong64_SS_426",
+			"https://archive.org/details/DonkeyKong64_SS_426"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1265,7 +1293,10 @@
 		"platform": "N64",
 		"time": "4-36-00",
 		"runner": "rdrunner",
-		"playedDate": "2006-09-19"
+		"playedDate": "2006-09-19",
+		"originalSources": [
+			"https://archive.org/details/DonkeyKong64_SS_436"
+		]
 	},
 	{
 		"category": "Any%",
@@ -1501,7 +1532,10 @@
 		"platform": "N64",
 		"time": "5-04-00",
 		"runner": "deutsch_joe",
-		"playedDate": "2006-06-04"
+		"playedDate": "2006-06-04",
+		"originalSources": [
+			"https://archive.org/details/DonkeyKong64_504"
+		]
 	},
 	{
 		"category": "Any%",
