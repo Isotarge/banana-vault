@@ -1828,7 +1828,10 @@
 		"platform": "N64",
 		"time": "2-51-05",
 		"runner": "Cfox",
-		"playedDate": "2013-11-28"
+		"playedDate": "2013-11-28",
+		"originalSources": [
+			"https://www.twitch.tv/videos/45691182"
+		]
 	},
 	{
 		"category": "No Levels Early",
