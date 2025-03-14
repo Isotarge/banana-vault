@@ -163,6 +163,22 @@
             ],
         };
 
+        const possibleVideoIssues = [
+            'multipleParts',
+            'extraFootageBefore',
+            'extraFootageAfter',
+            'resolutionBelow720',
+            'framerateBelow30',
+            'hasInterlacingIssues',
+            'hasBackgroundNoise',
+        ];
+
+        const checkboxes = [
+            'isMissing',
+            'isEncoded',
+            ...possibleVideoIssues,
+        ];
+
         let runs = []; // Loaded from JSON
         let selectedRunIndex = 0;
 
@@ -177,22 +193,14 @@
             document.getElementById('original-source-list').innerHTML = sourcesToListDOM(run.originalSources);
             document.getElementById('youtube-list').innerHTML = sourcesToListDOM(run.uploadedYouTube);
             document.getElementById('archive-org-list').innerHTML = sourcesToListDOM(run.uploadedArchive);
-            const checkboxes = [
-                'isMissing',
-                'multipleParts',
-                'extraFootageBefore',
-                'extraFootageAfter',
-                'resolutionBelow720',
-                'framerateBelow30',
-                'hasInterlacingIssues',
-                'hasBackgroundNoise',
-            ];
             for (const checkbox of checkboxes) {
                 document.getElementById(checkbox).checked = run[checkbox] === true;
             }
         }
 
         function refreshRuns() {
+            let runsToEncodeDOM = '';
+            let runsToEncodeCount = 0;
             let runsToUploadDOM = '';
             let runsToUploadCount = 0;
             let runsUploadedDOM = '';
@@ -215,8 +223,13 @@
                         missingRunsDOM += formatRunOption(i, run);
                         missingRunsCount++;
                     } else if (hasSource) {
-                        runsToUploadDOM += formatRunOption(i, run);
-                        runsToUploadCount++;
+                        if (runHasUnresolvedVideoIssues(run)) {
+                            runsToEncodeDOM += formatRunOption(i, run);
+                            runsToEncodeCount++;
+                        } else {
+                            runsToUploadDOM += formatRunOption(i, run);
+                            runsToUploadCount++;
+                        }
                     } else {
                         uncategorisedRunsDOM += formatRunOption(i, run);
                         uncategorisedRunsCount++;
@@ -224,11 +237,13 @@
                 }
             }
 
+            document.getElementById("header-to-encode").innerText = `Runs to Encode (${runsToEncodeCount})`;
             document.getElementById("header-to-upload").innerText = `Runs to Upload (${runsToUploadCount})`;
             document.getElementById("header-uploaded").innerText = `Uploaded Runs (${runsUploadedCount})`;
             document.getElementById("header-uncategorised").innerText = `Uncategorised Runs (${uncategorisedRunsCount})`;
             document.getElementById("header-missing").innerText = `Missing Runs (${missingRunsCount})`;
 
+            document.getElementById("run-to-encode").innerHTML = runsToEncodeDOM;
             document.getElementById("run-to-upload").innerHTML = runsToUploadDOM;
             document.getElementById("uploaded-run").innerHTML = runsUploadedDOM;
             document.getElementById("uncategorised-run").innerHTML = uncategorisedRunsDOM;
@@ -560,6 +575,18 @@
                 delete runs[selectedRunIndex][key];
             }
         }
+
+        function runHasUnresolvedVideoIssues(run) {
+            if (run['isEncoded'] === true) {
+                return false;
+            }
+            for (const videoIssue of possibleVideoIssues) {
+                if (run[videoIssue] === true) {
+                    return true;
+                }
+            }
+            return false;
+        }
     </script>
     <h1>🍌 WR Manager 🍌</h1>
     <form onsubmit="event.preventDefault();">
@@ -567,6 +594,10 @@
         <button onclick="importJSON()">Import JSON</button>
         <button onclick="exportJSON()">Export JSON</button>
     </form>
+    <h2 id="header-to-encode">Runs to Encode</h2>
+    <select name="run-to-encode" id="run-to-encode" onchange="selectRun('run-to-encode')">
+        <option>Please import JSON</option>
+    </select>
     <h2 id="header-to-upload">Runs to Upload</h2>
     <select name="run-to-upload" id="run-to-upload" onchange="selectRun('run-to-upload')">
         <option>Please import JSON</option>
@@ -593,6 +624,8 @@
     <input type="checkbox" id="framerateBelow30" oninput="toggleBoolean(this, 'framerateBelow30')"> Framerate Below 30<br>
     <input type="checkbox" id="hasInterlacingIssues" oninput="toggleBoolean(this, 'hasInterlacingIssues')"> Interlacing Issues<br>
     <input type="checkbox" id="hasBackgroundNoise" oninput="toggleBoolean(this, 'hasBackgroundNoise')"> Constant Background Noise<br>
+    <br>
+    <input type="checkbox" id="isEncoded" oninput="toggleBoolean(this, 'isEncoded')"> Video Has Been Re-Encoded<br>
     <br>
     <button onclick="selectPreviousRun()"><< Previous Run</button>&nbsp;<button onclick="selectNextRun()">Next Run >></button>
     <h4>Description</h4>
