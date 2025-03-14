@@ -1525,7 +1525,10 @@
 		"originalSources": [
 			"https://www.nicovideo.jp/watch/sm9621115",
 			"https://www.nicovideo.jp/watch/sm9621884"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true,
+		"framerateBelow30": true
 	},
 	{
 		"category": "Any%",

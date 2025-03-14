@@ -167,16 +167,29 @@
         let selectedRunIndex = 0;
 
         function formatRunOption(i, run) {
-            return `<option value='${i}'>${run.category} (${run.platform}) in ${run.time} by ${run.runner} on ${run.playedDate}</option>`;
+            return `<option value='${i}'>${run.category} (${run.platform}) in ${run.time.replaceAll('-', ':')} by ${run.runner} on ${run.playedDate}</option>`;
         }
 
         function refreshSelectedRunUI() {
             const run = runs[selectedRunIndex];
-            document.getElementById("run-description").value = generateDescription(run);
-            document.getElementById("original-source-list").innerHTML = sourcesToListDOM(run.originalSources);
-            document.getElementById("youtube-list").innerHTML = sourcesToListDOM(run.uploadedYouTube);
-            document.getElementById("archive-org-list").innerHTML = sourcesToListDOM(run.uploadedArchive);
-            document.getElementById("missing-checkbox").checked = run.isMissing === true;
+            document.getElementById('current-run-title').innerText = `Donkey Kong 64 - ${run.category} (${run.platform}) in ${run.time.replaceAll('-', ':')} by ${run.runner} - ${run.playedDate}`;
+            document.getElementById('run-description').value = generateDescription(run);
+            document.getElementById('original-source-list').innerHTML = sourcesToListDOM(run.originalSources);
+            document.getElementById('youtube-list').innerHTML = sourcesToListDOM(run.uploadedYouTube);
+            document.getElementById('archive-org-list').innerHTML = sourcesToListDOM(run.uploadedArchive);
+            const checkboxes = [
+                'isMissing',
+                'multipleParts',
+                'extraFootageBefore',
+                'extraFootageAfter',
+                'resolutionBelow720',
+                'framerateBelow30',
+                'hasInterlacingIssues',
+                'hasBackgroundNoise',
+            ];
+            for (const checkbox of checkboxes) {
+                document.getElementById(checkbox).checked = run[checkbox] === true;
+            }
         }
 
         function refreshRuns() {
@@ -539,12 +552,12 @@
             return result;
         }
 
-        function toggleSelectedRunMissing() {
-            const isMissing = document.getElementById('missing-checkbox').checked;
+        function toggleBoolean(_this, key) {
+            const isMissing = _this.checked;
             if (isMissing) {
-                runs[selectedRunIndex].isMissing = true;
+                runs[selectedRunIndex][key] = true;
             } else {
-                delete runs[selectedRunIndex].isMissing;
+                delete runs[selectedRunIndex][key];
             }
         }
     </script>
@@ -570,9 +583,18 @@
     <select name="missing-run" id="missing-run" onchange="selectRun('missing-run')">
         <option>Please import JSON</option>
     </select>
-    <h3>Current Run</h3>
-    <input type="checkbox" id="missing-checkbox" oninput="toggleSelectedRunMissing()"> Missing<br>
-    <button onclick="selectPreviousRun()">Previous Run</button><button onclick="selectNextRun()">Next Run</button>
+    <h3 id="current-run-title">Current Run</h3>
+    <input type="checkbox" id="isMissing" oninput="toggleBoolean(this, 'isMissing')"> Missing Video<br>
+    <h4>Video issues</h4>
+    <input type="checkbox" id="multipleParts" oninput="toggleBoolean(this, 'multipleParts')"> Multiple Parts<br>
+    <input type="checkbox" id="extraFootageBefore" oninput="toggleBoolean(this, 'extraFootageBefore')"> Extra Footage Before Run<br>
+    <input type="checkbox" id="extraFootageAfter" oninput="toggleBoolean(this, 'extraFootageAfter')"> Extra Footage After Run<br>
+    <input type="checkbox" id="resolutionBelow720" oninput="toggleBoolean(this, 'resolutionBelow720')"> Resolution Below 720p<br>
+    <input type="checkbox" id="framerateBelow30" oninput="toggleBoolean(this, 'framerateBelow30')"> Framerate Below 30<br>
+    <input type="checkbox" id="hasInterlacingIssues" oninput="toggleBoolean(this, 'hasInterlacingIssues')"> Interlacing Issues<br>
+    <input type="checkbox" id="hasBackgroundNoise" oninput="toggleBoolean(this, 'hasBackgroundNoise')"> Constant Background Noise<br>
+    <br>
+    <button onclick="selectPreviousRun()"><< Previous Run</button>&nbsp;<button onclick="selectNextRun()">Next Run >></button>
     <h4>Description</h4>
     <textarea id='run-description' style="width: 500px; height: 100px;">Please import JSON</textarea>
     <h4>Original Sources</h4>
