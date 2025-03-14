@@ -437,7 +437,9 @@
 			"https://www.twitch.tv/videos/50215905",
 			"https://www.twitch.tv/videos/50215873",
 			"https://www.twitch.tv/videos/50215884"
-		]
+		],
+		"multipleParts": true,
+		"hasBackgroundNoise": true
 	},
 	{
 		"category": "101%",
@@ -458,7 +460,9 @@
 			"https://www.youtube.com/watch?v=7STdri2l3Go",
 			"https://www.youtube.com/watch?v=pr74q9_MNqU",
 			"https://www.youtube.com/watch?v=EUQb0rbkTOE"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "101%",
@@ -468,7 +472,10 @@
 		"playedDate": "2006-08-04",
 		"originalSources": [
 			"https://archive.org/details/DonkeyKong64_101p_902"
-		]
+		],
+		"multipleParts": true,
+		"extraFootageBefore": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "101%",
@@ -479,7 +486,9 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/59400621",
 			"https://www.twitch.tv/videos/59401132"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "101%",
@@ -490,7 +499,9 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/21955800",
 			"https://www.twitch.tv/videos/21956412"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "101%",
@@ -501,7 +512,9 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/19374362",
 			"https://www.twitch.tv/videos/19374670"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "101%",
@@ -512,7 +525,8 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/5495731",
 			"https://www.twitch.tv/videos/5495743"
-		]
+		],
+		"multipleParts": true
 	},
 	{
 		"category": "101%",
@@ -744,7 +758,10 @@
 		"originalSources": [
 			"https://www.youtube.com/watch?v=9-Iv5w82nPo",
 			"https://www.youtube.com/watch?v=qia7gNczJx8"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true,
+		"hasBackgroundNoise": true
 	},
 	{
 		"category": "101%",
@@ -755,7 +772,10 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/24598640",
 			"https://www.twitch.tv/videos/24598044"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true,
+		"hasBackgroundNoise": true
 	},
 	{
 		"category": "101%",
@@ -766,7 +786,10 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/22297780",
 			"https://www.twitch.tv/videos/22297990"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true,
+		"hasBackgroundNoise": true
 	},
 	{
 		"category": "Any%",
@@ -858,7 +881,8 @@
 		"playedDate": "2014-08-07",
 		"originalSources": [
 			"https://www.youtube.com/watch?v=X52g3v_Bibo"
-		]
+		],
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -986,7 +1010,8 @@
 		"playedDate": "2013-08-12",
 		"originalSources": [
 			"https://www.youtube.com/watch?v=fMSpiR5FMHQ"
-		]
+		],
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -1147,7 +1172,9 @@
 		"originalSources": [
 			"https://speeddemosarchive.com/demo.pl?DonkeyKong64_NewGamePlus_SS_054",
 			"https://archive.org/details/2010-12-19-SDA_Speed_Runs"
-		]
+		],
+		"extraFootageBefore": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -1278,7 +1305,9 @@
 		"originalSources": [
 			"https://speeddemosarchive.com/demo.pl?DonkeyKong64_SS_426",
 			"https://archive.org/details/DonkeyKong64_SS_426"
-		]
+		],
+		"extraFootageBefore": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -1296,7 +1325,9 @@
 		"playedDate": "2006-09-19",
 		"originalSources": [
 			"https://archive.org/details/DonkeyKong64_SS_436"
-		]
+		],
+		"extraFootageBefore": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -1538,7 +1569,10 @@
 		"playedDate": "2006-06-04",
 		"originalSources": [
 			"https://archive.org/details/DonkeyKong64_504"
-		]
+		],
+		"multipleParts": true,
+		"extraFootageBefore": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "Any%",
@@ -2342,7 +2376,9 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/49779987",
 			"https://www.twitch.tv/videos/49778818"
-		]
+		],
+		"multipleParts": true,
+		"hasBackgroundNoise": true
 	},
 	{
 		"category": "No Levels Early",
@@ -2353,7 +2389,9 @@
 		"originalSources": [
 			"https://www.twitch.tv/videos/43938522",
 			"https://www.twitch.tv/videos/43938572"
-		]
+		],
+		"multipleParts": true,
+		"resolutionBelow720": true
 	},
 	{
 		"category": "No Levels Early",
