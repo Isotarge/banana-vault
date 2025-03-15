@@ -587,6 +587,46 @@
             }
             return false;
         }
+
+        function generateEncodeCommand() {
+            const files = [];
+            const trimBefore = [];
+            const trimAfter = [];
+            let lines = document.getElementById("video-files").value.split("\n");
+            for (const line of lines) {
+                const lineComponents = line.split(";");
+                if (lineComponents[0]) { // Filename found
+                    files.push(lineComponents[0]);
+                    if (typeof lineComponents[1] === 'string' && (lineComponents[1] !== '0' && lineComponents[1] !== '')) {
+                        trimBefore.push(lineComponents[1]);
+                    } else {
+                        trimBefore.push(0);
+                    }
+                    if (typeof lineComponents[2] === 'string' && (lineComponents[2] !== '0' && lineComponents[2] !== '')) {
+                        trimAfter.push(lineComponents[2]);
+                    } else {
+                        trimAfter.push(0);
+                    }
+                }
+            }
+            console.log(files, trimBefore, trimAfter);
+            let finalCommand = `@echo off\n\n`;
+            finalCommand += `ffmpeg `;
+            let filters = `-filter_complex "`;
+            for (const fileIndex in files) {
+                const file = files[fileIndex];
+                finalCommand += `-i \"${file}\" `;
+                filters += `[${fileIndex}:v]trim=start=${trimBefore[fileIndex]},[${fileIndex}:a]atrim=start=${trimBefore[fileIndex]},`
+                // TODO: Precise trim after segment
+                finalCommand += `^\n`;
+            }
+            filters += `scale=-2:1080,fps=60`; // applied to all inputs (ideally before concat? idk how it works yet)
+            filters += `" ^\n`;
+            finalCommand += filters;
+            finalCommand += `-c:v libx265 -crf 25 -preset faster -c:a aac -b:a 384k "${files[1]}.x265.mkv"\n\n`;
+            finalCommand += `pause\n`;
+            document.getElementById("encode-command").innerText = finalCommand;
+        }
     </script>
     <h1>🍌 WR Manager 🍌</h1>
     <form onsubmit="event.preventDefault();">
@@ -651,5 +691,11 @@
     </ul>
     <input type="url" name="archive-org-url" id="archive-org-url">
     <button onclick="addArchiveLink()">Add archive.org URL</button>
+    <h3>Encoder</h3>
+    <h4>Run Video Part(s)</h4>
+    <textarea onchange="generateEncodeCommand()" id="video-files" style="width: 500px; height: 100px;"></textarea>
+    <br>
+    <h4>FFMPEG Command Output</h4>
+    <code id="encode-command"></code>
 </body>
 </html>
